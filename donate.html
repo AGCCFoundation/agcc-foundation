@@ -9,49 +9,76 @@
 <body>
 
 <header>
+
     <div class="logo-container">
         <img src="logo.png" alt="AGCC Foundation Logo" class="logo">
-        <div>
+
+        <div class="brand">
             <h1>AGCC Foundation</h1>
-            <p class="tagline">Educate • Empower • Elevate</p>
+            <p>Educate • Empower • Elevate</p>
         </div>
     </div>
 
     <nav>
-<nav>
-    <a href="index.html">Home</a>
-    <a href="about.html">About</a>
-    <a href="volunteer.html">Volunteer</a>
-    <a href="donate.html">Donate</a>
-    <a href="contact.html">Contact</a>
-</nav>
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="volunteer.html">Volunteer</a>
+        <a href="donate.html" class="active">Donate</a>
+        <a href="contact.html">Contact</a>
     </nav>
+
 </header>
 
-<section>
-    <h2>Support AGCC Foundation</h2>
+<section class="page-banner">
+
+    <h1>Support Our Mission</h1>
 
     <p>
         Your support helps us create educational opportunities,
-        leadership programs, and community initiatives for girls.
+        leadership programs, and a brighter future for girls.
     </p>
+
 </section>
 
 <section>
-    <h2>Why Donate?</h2>
 
-    <p>
-        Every contribution helps us empower girls through education,
-        mentorship, leadership development, and community support.
-    </p>
+    <h2>Why Your Support Matters</h2>
 
-    <p>
-        Together, we can build a future where every girl has the
-        opportunity to learn, lead, and succeed.
-    </p>
+    <div class="cards">
+
+        <div class="card">
+            <h3>Education</h3>
+
+            <p>
+                Help provide learning opportunities, resources,
+                and educational support.
+            </p>
+        </div>
+
+        <div class="card">
+            <h3>Leadership</h3>
+
+            <p>
+                Support programs that help girls build confidence
+                and leadership skills.
+            </p>
+        </div>
+
+        <div class="card">
+            <h3>Opportunity</h3>
+
+            <p>
+                Create pathways for girls to achieve their goals
+                and contribute positively to society.
+            </p>
+        </div>
+
+    </div>
+
 </section>
 
 <section>
+
     <h2>Donation Interest Form</h2>
 
     <form id="donationForm">
@@ -73,40 +100,63 @@
         <input
             type="number"
             id="amount"
-            placeholder="Donation Amount"
+            placeholder="Donation Amount (USD)"
             min="1"
             required
         >
 
         <button type="submit">
-            Submit
+            Submit Donation Interest
         </button>
 
     </form>
+
 </section>
 
-<section>
-    <h2>Contact Us</h2>
+<section class="cta">
+
+    <h2>Every Contribution Makes a Difference</h2>
 
     <p>
-        Email: afghangirlscreatingchange@gmail.com
+        Together we can empower girls through education,
+        leadership, equality, and opportunity.
     </p>
+
 </section>
 
 <footer>
-    <p>© 2026 AGCC Foundation. All Rights Reserved.</p>
-    <p>Educate • Empower • Elevate</p>
+
+    <div class="footer-content">
+
+        <div>
+            <h3>AGCC Foundation</h3>
+            <p>Educate • Empower • Elevate</p>
+        </div>
+
+        <div>
+            <h3>Contact</h3>
+            <p>afghangirlscreatingchange@gmail.com</p>
+        </div>
+
+    </div>
+
+    <p class="copyright">
+        © 2026 AGCC Foundation. All Rights Reserved.
+    </p>
+
 </footer>
 
 <script>
 document.getElementById("donationForm").addEventListener("submit", function(e) {
+
     e.preventDefault();
 
     alert(
-        "Thank you for supporting AGCC Foundation. Online donation processing will be available soon."
+        "Thank you for supporting AGCC Foundation. We will contact you regarding your donation."
     );
 
     this.reset();
+
 });
 </script>
 
