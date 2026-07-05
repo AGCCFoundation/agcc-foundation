@@ -9,8 +9,13 @@
 <body>
 
 <header>
-    <h1>AGCC Foundation</h1>
-    <p>Educate • Empower • Elevate</p>
+    <div class="logo-container">
+        <img src="logo.png" alt="AGCC Foundation Logo" class="logo">
+        <div>
+            <h1>AGCC Foundation</h1>
+            <p class="tagline">Educate • Empower • Elevate</p>
+        </div>
+    </div>
 
     <nav>
         <a href="index.html">Home</a>
@@ -19,39 +24,31 @@
     </nav>
 </header>
 
-<section class="page-header">
+<section>
     <h2>Support AGCC Foundation</h2>
 
     <p>
-        Your support helps us expand educational opportunities,
-        leadership development programs, and community initiatives
-        for girls and young women.
+        Your support helps us create educational opportunities,
+        leadership programs, and community initiatives for girls.
     </p>
 </section>
 
-<section class="donation-info">
+<section>
+    <h2>Why Donate?</h2>
 
-    <div class="card">
-        <h3>Why Donate?</h3>
-        <p>
-            Every contribution helps us provide learning opportunities,
-            mentorship, and support to girls striving for a brighter future.
-        </p>
-    </div>
+    <p>
+        Every contribution helps us empower girls through education,
+        mentorship, leadership development, and community support.
+    </p>
 
-    <div class="card">
-        <h3>Our Commitment</h3>
-        <p>
-            We are committed to using donations responsibly to advance
-            education, empowerment, and community development.
-        </p>
-    </div>
-
+    <p>
+        Together, we can build a future where every girl has the
+        opportunity to learn, lead, and succeed.
+    </p>
 </section>
 
-<section class="form-section">
-
-    <h2>Donation Pledge Form</h2>
+<section>
+    <h2>Donation Interest Form</h2>
 
     <form id="donationForm">
 
@@ -72,33 +69,29 @@
         <input
             type="number"
             id="amount"
-            placeholder="Donation Amount (USD)"
+            placeholder="Donation Amount"
             min="1"
             required
         >
 
         <button type="submit">
-            Submit Donation Interest
+            Submit
         </button>
 
     </form>
-
 </section>
 
-<section class="contact">
-    <h3>Contact</h3>
+<section>
+    <h2>Contact Us</h2>
 
     <p>
         Email: afghangirlscreatingchange@gmail.com
-    </p>
-
-    <p>
-        Thank you for supporting the mission of AGCC Foundation.
     </p>
 </section>
 
 <footer>
     <p>© 2026 AGCC Foundation. All Rights Reserved.</p>
+    <p>Educate • Empower • Elevate</p>
 </footer>
 
 <script>
@@ -106,8 +99,7 @@ document.getElementById("donationForm").addEventListener("submit", function(e) {
     e.preventDefault();
 
     alert(
-        "Thank you for your interest in supporting AGCC Foundation. " +
-        "Online donation processing will be available soon."
+        "Thank you for supporting AGCC Foundation. Online donation processing will be available soon."
     );
 
     this.reset();
