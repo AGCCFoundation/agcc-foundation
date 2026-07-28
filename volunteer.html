@@ -78,33 +78,24 @@
 
     <h2>Volunteer Application Form</h2>
 
-    <form id="volunteerForm">
-
-        <input
-            type="text"
-            id="name"
-            placeholder="Full Name"
-            required
-        >
-
-        <input
-            type="email"
-            id="email"
-            placeholder="Email Address"
-            required
-        >
-
-        <textarea
-            id="message"
-            placeholder="Tell us about yourself and why you want to volunteer"
-            required
-        ></textarea>
-
-        <button type="submit">
-            Submit Application
-        </button>
-
-    </form>
+    <div class="form-container">
+        <div class="iframe-wrapper">
+            <iframe 
+                src="https://docs.google.com/forms/d/e/1FAIpQLScNqgRHEWxspWf3Q6Ksvd-g_fBmjIhZjlT_56jc-VYFg6vPBg/viewform?embedded=true" 
+                width="100%" 
+                height="800" 
+                frameborder="0" 
+                marginheight="0" 
+                marginwidth="0">
+                Loading application form…
+            </iframe>
+        </div>
+        
+        <p class="form-fallback">
+            Having trouble viewing the form above? 
+            <a href="https://docs.google.com/forms/d/e/1FAIpQLScNqgRHEWxspWf3Q6Ksvd-g_fBmjIhZjlT_56jc-VYFg6vPBg/viewform?usp=header" target="_blank" rel="noopener noreferrer">Click here to open it directly in Google Forms</a>.
+        </p>
+    </div>
 
 </section>
 
@@ -140,20 +131,6 @@
     </p>
 
 </footer>
-
-<script>
-document.getElementById("volunteerForm").addEventListener("submit", function(e) {
-
-    e.preventDefault();
-
-    alert(
-        "Thank you for your interest in volunteering with AGCC Foundation. We will contact you soon."
-    );
-
-    this.reset();
-
-});
-</script>
 
 </body>
 </html>
