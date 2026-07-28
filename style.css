@@ -29,29 +29,39 @@ header{
     display:flex;
     align-items:center;
     justify-content:center;
-    gap:20px;
+    gap:25px;
     margin-bottom:20px;
 }
 
-
+/* REDESIGNED LOGO STYLING */
 .logo{
-    width:200px;
-    height:auto;
+    width:110px;
+    height:110px;
+    object-fit:cover;
+    border-radius:50%;
+    background:#ffffff;
+    padding:8px;
+    border:3px solid #f4b400;
+    box-shadow:0 8px 20px rgba(0, 0, 0, 0.25), 0 0 15px rgba(244, 180, 0, 0.3);
+    transition:all 0.4s ease-in-out;
     display:block;
-    margin:auto;
-    border:3px solid red;
 }
+
 .logo:hover{
-    transform:scale(1.05);
+    transform:scale(1.08) rotate(2deg);
+    border-color:#ffffff;
+    box-shadow:0 12px 28px rgba(0, 0, 0, 0.35), 0 0 20px rgba(244, 180, 0, 0.6);
 }
 
 .brand h1{
     font-size:2.3rem;
+    letter-spacing:0.5px;
 }
 
 .brand p{
     color:#d8e7ff;
     font-size:1rem;
+    font-weight:500;
 }
 
 /* NAVIGATION */
@@ -217,34 +227,44 @@ button:hover{
     color:white;
 }
 
-/* FORMS */
+/* EMBEDDED FORM STYLING */
 
-form{
-    background:white;
-    padding:35px;
-    border-radius:20px;
-    box-shadow:0 8px 25px rgba(0,0,0,0.08);
+.form-container {
+    background: white;
+    padding: 25px;
+    border-radius: 20px;
+    box-shadow: 0 8px 25px rgba(0,0,0,0.08);
+    overflow: hidden;
 }
 
-input,
-textarea{
-    width:100%;
-    padding:15px;
-    margin-bottom:15px;
-    border:1px solid #d7dce4;
-    border-radius:10px;
-    font-size:1rem;
+.iframe-wrapper {
+    position: relative;
+    width: 100%;
+    border-radius: 12px;
+    overflow: hidden;
 }
 
-textarea{
-    min-height:150px;
-    resize:vertical;
+.iframe-wrapper iframe {
+    width: 100%;
+    border: none;
+    border-radius: 12px;
 }
 
-input:focus,
-textarea:focus{
-    outline:none;
-    border-color:#143d8d;
+.form-fallback {
+    text-align: center;
+    margin-top: 15px;
+    font-size: 0.95rem;
+    color: #555;
+}
+
+.form-fallback a {
+    color: #143d8d;
+    font-weight: 600;
+    text-decoration: underline;
+}
+
+.form-fallback a:hover {
+    color: #f4b400;
 }
 
 /* FOOTER */
@@ -273,13 +293,19 @@ footer{
     color:#b7c6e3;
 }
 
-/* MOBILE */
+/* MOBILE RESPONSIVENESS */
 
 @media(max-width:768px){
 
     .logo-container{
         flex-direction:column;
         text-align:center;
+        gap:15px;
+    }
+
+    .logo {
+        width:90px;
+        height:90px;
     }
 
     .hero h1{
